@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUAT KAMU</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1" onclick="showImage('image1.jpg')">
+            <div class="box-content">KAMUU</div>
+        </div>
+        <div class="box" id="box2" onclick="showImage('image2.jpg')">
+            <div class="box-content">AKUU</div>
+        </div>
+        <div class="box" id="box3" onclick="showImage('image3.jpg')">
+            <div class="box-content">KITAA</div>
+        </div>
+        <div class="box" id="box4" onclick="goToSecret()">
+            <div class="box-content">INI KOTAK RAHASIA!</div>
+        </div>
+    </div>
+
+    <!-- Modal untuk menampilkan gambar -->
+    <div id="imageModal" class="modal">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <img id="modalImage" src="" alt="Modal Image">
+    </div>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>
